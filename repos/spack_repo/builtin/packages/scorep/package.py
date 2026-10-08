@@ -93,7 +93,7 @@ class Scorep(AutotoolsPackage):
 
     # SCOREP 9
     depends_on("gotcha@1.0.8:", type="link", when="+gotcha")
-    depends_on("libllvm", type="link", when="+llvm-plugin")
+    depends_on("libllvm@13:", type="link", when="+llvm-plugin")
     depends_on("otf2@3.1:", when="@9:")
     depends_on("cubew@4.9:", when="@9:")
     depends_on("cubelib@4.9:", when="@9:")
